@@ -4,16 +4,21 @@
 .potatos{
 position:relative;
 left:50%;
-top:200;
+top:50%;
 transform:translate(-50%,0);
 width:100px;
 height:75px
 }
 </style>
-  <script>
-    var audio = document.getElementById("myaudio");
-  		audio.volume = 0.2;
-  </script>
+<style>
+.pepe{
+position:absolute;
+left:0;
+top:0;
+width:0%;
+height:0%;
+}
+</style>
 <script>
 function dancer() {
     var img;
@@ -21,6 +26,7 @@ function dancer() {
 img = "sasas.jpg"
     }
     document.getElementById('image').src = img;
+document.getElementById('image').style = "height:100%;width:100%;";
 
 var myAudio = new Audio;
 myAudio.src = "scream.mp3";
@@ -30,7 +36,10 @@ myAudio.play();
 <title>bodypositivchik</title>
 </head>
 <body background="potatos.jpg" width="10px" style="no-repeat center center fixed; background-size: cover;" bgcolor="yellow">
-<img id="image" src="">
+<section>
+<embed src="kartof.mp3" id="wyw" style="opacity:0;"></embed>
+</section>
+<img id="image" src="" class="pepe">
 <p>
 <button type="button" class="potatos" onclick="this.style.display='none'; dancer()">Твоя смЭрть</button>
 <br><br>
