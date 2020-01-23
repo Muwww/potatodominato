@@ -1,5 +1,15 @@
 <html>
 <head>
+<style>
+.potatos{
+position:relative;
+left:50%;
+top:200;
+transform:translate(-50%,0);
+width:100px;
+height:75px
+}
+</style>
   <script>
     var audio = document.getElementById("myaudio");
   		audio.volume = 0.2;
@@ -8,20 +18,21 @@
 function dancer() {
     var img;
     {
-img = "HTML/sasas.jpg"
+img = "sasas.jpg"
     }
     document.getElementById('image').src = img;
+
 var myAudio = new Audio;
-myAudio.src = "HTML/scream.mp3";
+myAudio.src = "scream.mp3";
 myAudio.play();
 }
 </script>
 <title>bodypositivchik</title>
 </head>
-<body background="HTML/potatos.jpg" width="10px" style="no-repeat center center fixed; background-size: 100%;" bgcolor="yellow">
+<body background="potatos.jpg" width="10px" style="no-repeat center center fixed; background-size: cover;" bgcolor="yellow">
 <img id="image" src="">
 <p>
-<button type="button" style="width:100px;height:75px" onclick="this.style.display='none'; dancer()">Твоя смЭрть</button>
+<button type="button" class="potatos" onclick="this.style.display='none'; dancer()">Твоя смЭрть</button>
 <br><br>
 </body>
 </html>
