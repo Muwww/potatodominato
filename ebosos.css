@@ -24,3 +24,9 @@ table {
 .saas {
 	font-size: 25px;
 }
+
+@media screen and (min-width:240px) and (max-width:720px) {
+	table {
+		height: 100%;
+	}
+}
