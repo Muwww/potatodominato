@@ -22,12 +22,28 @@ table {
 }
 
 .saas {
-	font-size: 25px;
+	font-size: 35px;
+}
+
+.rich {
+	width: 500px;
+	height: 250px;
 }
 
 @media screen and (min-width:240px) and (max-width:720px) {
 	table {
-		height: 100%;
 		width: 100%;
+		height: 100%;
 	}
+}
+#square {
+	width: 100%;
+	height: 50px;
+	background: red;
+}
+.sas {
+	width: 949px;
+	height: 534px;
+	background-color: rgba(0, 50, 50, 0);
+	border-style: none;
 }
